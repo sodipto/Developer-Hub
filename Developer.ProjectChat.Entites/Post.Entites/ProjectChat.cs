@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Developer.ProjectChat.Entites.Post.Entites
+namespace DeveloperHub.ProjectChat.Entites.Post.Entites
 {
     public class ProjectChat
     {

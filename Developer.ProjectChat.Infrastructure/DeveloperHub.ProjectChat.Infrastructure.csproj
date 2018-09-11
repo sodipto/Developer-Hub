@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeveloperHubDbContext.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,9 +61,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Developer.ProjectChat.Entites\Developer.ProjectChat.Entites.csproj">
+    <ProjectReference Include="..\Developer.ProjectChat.Entites\DeveloperHub.ProjectChat.Entites.csproj">
       <Project>{d2f86379-bc72-468b-83e0-f3a22cefb563}</Project>
-      <Name>Developer.ProjectChat.Entites</Name>
+      <Name>DeveloperHub.ProjectChat.Entites</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

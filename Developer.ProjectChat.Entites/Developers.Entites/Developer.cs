@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Developer.ProjectChat.Entites.Developer.Entites
+namespace DeveloperHub.ProjectChat.Entites.Developers.Entites
 {
     public class Developer
     {
