@@ -52,6 +52,7 @@
     <Compile Include="Developer.Entites\Developer.cs" />
     <Compile Include="Post.Entites\ProjectChat.cs" />
     <Compile Include="Project.Entites\Project.cs" />
+    <Compile Include="Project.Entites\ProjectDeveloper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
