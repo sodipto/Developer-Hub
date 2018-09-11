@@ -11,7 +11,7 @@ namespace Developer.ProjectChat.Entites.Developer.Entites
     public class Developer
     {
         [Key]
-        public int DeveloperID { get; set; }
+        public int DeveloperId { get; set; }
 
         [Required]
         public string FullName { get; set; }

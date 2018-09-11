@@ -12,13 +12,13 @@ namespace Developer.ProjectChat.Entites.Project.Entites
         [Key]
         public int ProjectId { get; set; }
 
-
+        [Required]
         public string ProjectName { get; set; }
 
-
+        [Required]
         public string ProgrammingLanguage { get; set; }
 
-
+        [Required]
         public string  Status { get; set; }
 
 
