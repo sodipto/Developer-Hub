@@ -23,12 +23,5 @@ namespace DeveloperHub.ProjectChat.Infrastructure
         public DbSet<ProjectDeveloper> ProjectDevelopers { get; set; }
 
 
-
-
-
-
-
-
-
     }
 }
