@@ -12,7 +12,14 @@ namespace DeveloperHub.ProjectChat.Entites.Project.Entites
         [Key]
         public int Id { get; set; }
 
+        [Required]
         public int DeveloperId { get; set; }
+
+
+        [Required]
+        public int ProjectId { get; set; }
+
+
 
 
     }

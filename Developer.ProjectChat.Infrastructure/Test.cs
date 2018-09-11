@@ -15,7 +15,13 @@ namespace DeveloperHub.ProjectChat.Infrastructure
             ProjectDeveloper p = new ProjectDeveloper();
             DeveloperHubDbContext db = new DeveloperHubDbContext();
 
-            //p.DeveloperId = 1;
+            p.DeveloperId = 1;
+
+            db.ProjectDevelopers.Add(p);
+            db.SaveChanges();
+            Console.WriteLine("Complete");
+
+            Console.ReadKey();
 
 
         }

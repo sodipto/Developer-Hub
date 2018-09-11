@@ -32,7 +32,7 @@ namespace DeveloperHub.ProjectChat.Entites.Developers.Entites
         [Required]
         public string Email { get; set; }
 
-        [Required]
+     
         public string ImageUrl { get; set; }
 
         

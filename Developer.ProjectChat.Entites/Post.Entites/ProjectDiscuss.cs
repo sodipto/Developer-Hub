@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DeveloperHub.ProjectChat.Entites.Post.Entites
 {
-    public class ProjectChat
+    public class ProjectDiscuss
     {
         [Key]
         public int ProjectChatId { get; set; }

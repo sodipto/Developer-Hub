@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Developers.Entites\Developer.cs" />
-    <Compile Include="Post.Entites\ProjectChat.cs" />
+    <Compile Include="Post.Entites\ProjectDiscuss.cs" />
     <Compile Include="Project.Entites\Project.cs" />
     <Compile Include="Project.Entites\ProjectDeveloper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
