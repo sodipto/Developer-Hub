@@ -176,9 +176,9 @@
     <Content Include="Content\Component\bower_components\Flot\jquery.flot.js" />
     <Content Include="Content\Component\bower_components\Flot\jquery.flot.pie.js" />
     <Content Include="Content\Component\bower_components\Flot\jquery.flot.resize.js" />
-    <Content Include="Content\Component\bower_components\font-awesome\css\font-awesome-cdn.css" />
     <Content Include="Content\Component\bower_components\font-awesome\css\font-awesome.css" />
     <Content Include="Content\Component\bower_components\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\Component\bower_components\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Component\bower_components\Ionicons\css\ionicons.css" />
     <Content Include="Content\Component\bower_components\Ionicons\css\ionicons.min.css" />
     <Content Include="Content\Component\bower_components\jquery-slimscroll\jquery.slimscroll.min.js" />
@@ -357,6 +357,11 @@
     <Content Include="Content\Component\bower_components\jquery\dist\jquery.slim.min.map" />
     <Content Include="Content\Component\dist\css\adminlte.css.map" />
     <Content Include="Content\Component\dist\css\adminlte.min.css.map" />
+    <Content Include="Content\Component\bower_components\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Component\bower_components\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Component\bower_components\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Component\bower_components\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Component\bower_components\font-awesome\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
