@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -148,7 +156,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,6 +164,176 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\js\npm.js" />
+    <Content Include="Content\Component\bower_components\fastclick\lib\fastclick.js" />
+    <Content Include="Content\Component\bower_components\Flot\jquery.flot.categories.js" />
+    <Content Include="Content\Component\bower_components\Flot\jquery.flot.js" />
+    <Content Include="Content\Component\bower_components\Flot\jquery.flot.pie.js" />
+    <Content Include="Content\Component\bower_components\Flot\jquery.flot.resize.js" />
+    <Content Include="Content\Component\bower_components\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\Component\bower_components\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\Component\bower_components\Ionicons\css\ionicons.css" />
+    <Content Include="Content\Component\bower_components\Ionicons\css\ionicons.min.css" />
+    <Content Include="Content\Component\bower_components\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Content\Component\bower_components\jquery\dist\core.js" />
+    <Content Include="Content\Component\bower_components\jquery\dist\jquery.js" />
+    <Content Include="Content\Component\bower_components\jquery\dist\jquery.min.js" />
+    <Content Include="Content\Component\bower_components\jquery\dist\jquery.slim.js" />
+    <Content Include="Content\Component\bower_components\jquery\dist\jquery.slim.min.js" />
+    <Content Include="Content\Component\dist\css\AdminLTE.css" />
+    <Content Include="Content\Component\dist\css\AdminLTE.min.css" />
+    <Content Include="Content\Component\dist\css\alt\AdminLTE-bootstrap-social.css" />
+    <Content Include="Content\Component\dist\css\alt\AdminLTE-bootstrap-social.min.css" />
+    <Content Include="Content\Component\dist\css\alt\AdminLTE-fullcalendar.css" />
+    <Content Include="Content\Component\dist\css\alt\AdminLTE-fullcalendar.min.css" />
+    <Content Include="Content\Component\dist\css\alt\AdminLTE-select2.css" />
+    <Content Include="Content\Component\dist\css\alt\AdminLTE-select2.min.css" />
+    <Content Include="Content\Component\dist\css\alt\AdminLTE-without-plugins.css" />
+    <Content Include="Content\Component\dist\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="Content\Component\dist\css\Login.css" />
+    <Content Include="Content\Component\dist\css\photogallary.css" />
+    <Content Include="Content\Component\dist\css\PhotoGrapherList.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-black-light.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-black-light.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-black.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-black.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-blue-light.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-blue-light.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-blue.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-blue.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-green-light.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-green-light.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-green.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-green.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-purple-light.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-purple-light.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-purple.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-purple.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-red-light.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-red-light.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-red.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-red.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-yellow-light.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-yellow-light.min.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-yellow.css" />
+    <Content Include="Content\Component\dist\css\skins\skin-yellow.min.css" />
+    <Content Include="Content\Component\dist\css\skins\_all-skins.css" />
+    <Content Include="Content\Component\dist\css\skins\_all-skins.min.css" />
+    <Content Include="Content\Component\dist\css\uploadphoto.css" />
+    <Content Include="Content\Component\dist\img\avatar.png" />
+    <Content Include="Content\Component\dist\img\avatar04.png" />
+    <Content Include="Content\Component\dist\img\avatar2.png" />
+    <Content Include="Content\Component\dist\img\avatar3.png" />
+    <Content Include="Content\Component\dist\img\avatar5.png" />
+    <Content Include="Content\Component\dist\img\b.jpg" />
+    <Content Include="Content\Component\dist\img\boxed-bg.jpg" />
+    <Content Include="Content\Component\dist\img\boxed-bg.png" />
+    <Content Include="Content\Component\dist\img\coverphoto.jpg" />
+    <Content Include="Content\Component\dist\img\default-50x50.gif" />
+    <Content Include="Content\Component\dist\img\gallary\1.jpg" />
+    <Content Include="Content\Component\dist\img\gallary\2.jpg" />
+    <Content Include="Content\Component\dist\img\gallary\3.jpg" />
+    <Content Include="Content\Component\dist\img\gallary\4.jpg" />
+    <Content Include="Content\Component\dist\img\icons.png" />
+    <Content Include="Content\Component\dist\img\photo1.png" />
+    <Content Include="Content\Component\dist\img\photo2.png" />
+    <Content Include="Content\Component\dist\img\photo3.jpg" />
+    <Content Include="Content\Component\dist\img\photo4.jpg" />
+    <Content Include="Content\Component\dist\img\PhotoGrapher\1.jpg" />
+    <Content Include="Content\Component\dist\img\PhotoGrapher\2.jpg" />
+    <Content Include="Content\Component\dist\img\PhotoGrapher\3.jpg" />
+    <Content Include="Content\Component\dist\img\PhotoGrapher\4.jpg" />
+    <Content Include="Content\Component\dist\img\PhotoGrapher\5.jpg" />
+    <Content Include="Content\Component\dist\img\PhotoGrapher\6.jpg" />
+    <Content Include="Content\Component\dist\img\saha.JPG" />
+    <Content Include="Content\Component\dist\img\user1-128x128.jpg" />
+    <Content Include="Content\Component\dist\img\user2-160x160.jpg" />
+    <Content Include="Content\Component\dist\img\user3-128x128.jpg" />
+    <Content Include="Content\Component\dist\img\user4-128x128.jpg" />
+    <Content Include="Content\Component\dist\img\user5-128x128.jpg" />
+    <Content Include="Content\Component\dist\img\user6-128x128.jpg" />
+    <Content Include="Content\Component\dist\img\user7-128x128.jpg" />
+    <Content Include="Content\Component\dist\img\user8-128x128.jpg" />
+    <Content Include="Content\Component\dist\js\adminlte.min.js" />
+    <Content Include="Content\Component\dist\js\demo.js" />
+    <Content Include="Content\Component\dist\js\pages\adminlte.js" />
+    <Content Include="Content\Component\dist\js\pages\dashboard.js" />
+    <Content Include="Content\Component\dist\js\pages\dashboard2.js" />
+    <Content Include="Content\Component\dist\js\uploadphoto.js" />
+    <Content Include="Content\Component\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.js" />
+    <Content Include="Content\Component\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="Content\Component\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.css" />
+    <Content Include="Content\Component\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.min.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\aero%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\aero.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\aero.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\blue%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\blue.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\blue.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\flat%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\flat.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\flat.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\green%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\green.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\green.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\grey%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\grey.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\grey.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\orange%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\orange.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\orange.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\pink%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\pink.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\pink.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\purple%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\purple.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\purple.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\red%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\red.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\red.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\yellow%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\yellow.css" />
+    <Content Include="Content\Component\plugins\iCheck\flat\yellow.png" />
+    <Content Include="Content\Component\plugins\iCheck\flat\_all.css" />
+    <Content Include="Content\Component\plugins\iCheck\icheck.min.js" />
+    <Content Include="Content\Component\plugins\iCheck\square\aero%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\aero.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\aero.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\blue%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\blue.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\blue.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\green%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\green.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\green.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\grey%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\grey.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\grey.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\orange%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\orange.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\orange.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\pink%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\pink.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\pink.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\purple%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\purple.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\purple.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\red%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\red.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\red.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\square%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\square.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\square.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\yellow%402x.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\yellow.css" />
+    <Content Include="Content\Component\plugins\iCheck\square\yellow.png" />
+    <Content Include="Content\Component\plugins\iCheck\square\_all.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -168,6 +345,19 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Component\bower_components\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Component\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Component\bower_components\font-awesome\css\font-awesome.css.map" />
+    <Content Include="Content\Component\bower_components\jquery\dist\jquery.min.map" />
+    <Content Include="Content\Component\bower_components\jquery\dist\jquery.slim.min.map" />
+    <Content Include="Content\Component\dist\css\adminlte.css.map" />
+    <Content Include="Content\Component\dist\css\adminlte.min.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -188,15 +378,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +393,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Developer.ProjectChat.Entites\DeveloperHub.ProjectChat.Entites.csproj">
+      <Project>{d2f86379-bc72-468b-83e0-f3a22cefb563}</Project>
+      <Name>DeveloperHub.ProjectChat.Entites</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Developer.ProjectChat.Infrastructure\DeveloperHub.ProjectChat.Infrastructure.csproj">
+      <Project>{07110cc1-582d-4ea0-a39b-dd0afa40f8e8}</Project>
+      <Name>DeveloperHub.ProjectChat.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
