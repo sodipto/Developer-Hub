@@ -1,0 +1,120 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_DeveloperLayout.cshtml";
+}
+
+@section CSS{
+    <style>
+
+    body{
+  
+    font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    h3{
+    font-family: 'Josefin Sans', sans-serif;
+    }
+    .box{
+    padding:60px 0px;
+    }
+    .box-part{
+    background:#FFF;
+    border-radius:10px;
+    padding:60px 10px;
+    
+    }
+    .box-part:hover{
+    background:#4183D7;
+    }
+    .box-part:hover .fa ,
+    .box-part:hover .title ,
+    .box-part:hover .text ,
+    .box-part:hover a{
+    color:#FFF;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    }
+    .text{
+    margin:20px 0px;
+    }
+    .fa{
+    color:#4183D7;
+    }
+    </style>
+}
+
+
+<div class="row">
+    <div class="col-md-3">
+    
+        @Html.Partial("~/Views/PartialView/DeveloperNavbar.cshtml");
+        
+
+
+    </div>
+    <div class="col-md-9">
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+            <div class="box-part text-center">
+
+                <i class="fa fa-behance fa-3x" aria-hidden="true"></i>
+
+                <div class="title">
+                    <h3>Behance</h3>
+                </div>
+
+                <div class="text">
+                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                </div>
+
+                <a href="#">Learn More</a>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+            <div class="box-part text-center">
+
+                <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+
+                <div class="title">
+                    <h3>Twitter</h3>
+                </div>
+
+                <div class="text">
+                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                </div>
+
+                <a href="#">Learn More</a>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+            <div class="box-part text-center">
+
+                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+
+                <div class="title">
+                    <h3>Facebook</h3>
+                </div>
+
+                <div class="text">
+                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                </div>
+
+                <a href="#">Learn More</a>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
